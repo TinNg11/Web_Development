@@ -1,0 +1,108 @@
+/* Styles for the main body of the webpage */
+#main-body {
+    background-image: url("Images/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 15px; 
+    padding: 15px; 
+}
+
+/* Styles for the content fieldset */
+#content {
+    background-color: powderblue; 
+    margin: 25px; 
+    display: flex;
+}
+
+/* Styles for the main table */
+#t01 {
+    padding: 40px;
+}
+
+/* Styles for specific form elements */
+
+/* Styles for the "My Favorite Place" input */
+#fp {
+    font-size: 15px; /* Font size */
+    width: 80%; /* Width of the input field */
+    height: 25px; /* Height of the input field */
+    margin-bottom: 10px; /* Margin at the bottom of the input */
+}
+
+/* Styles for the "Place Description" textarea */
+#pd {
+    font-size: 15px; 
+    max-width: 70%; 
+    width: 70%;
+    height: 100px;
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+/* Styles for the "I accept the terms and conditions" checkbox */
+#accept-terms {
+    font-size: 10px; 
+    background-color: white;
+    width: 90%; 
+    padding: 5px;
+    margin-top: 25px; 
+}
+
+/* Styles for the "Rate this Place" input */
+#rating {
+    margin-top: 10px;
+}
+
+/* Styles for the "Color Collection" input */
+#color-collection {
+    margin-top: 5px; 
+}
+
+/* Styles for the "skyline" image */
+#skyline {
+    width: 250px;
+    height: 250px;
+}
+
+/* Styles for the second fieldset */
+#f02 {
+    width: 100%; /* Width of the fieldset */
+}
+
+/* Styles for the "Do you need accommodation?" options */
+#accommodation {
+    font-size: 15px;
+    border: 2px solid #ccc;
+    margin-top: 0px;
+    border-color: white; 
+    padding: 10px;
+}
+
+/* Styles for the "Services" options */
+#services {
+    font-size: 15px; 
+    border: 2px solid #ccc;
+    margin-top: 25px; 
+    border-color: white; 
+    padding: 10px; 
+}
+
+/* Styles for the "Check-in Date and Time" options */
+#checkIn {
+    font-size: 15px;
+    border: 2px solid #ccc; 
+    margin-top: 100px; 
+    border-color: white;
+    padding: 10px; 
+}
+
+/* Styles for the "Submit and Reset" buttons */
+#submit-reset {
+    font-size: 15px; 
+    background-color: white; 
+    width: 45%;
+    margin-top: 50px; 
+    padding: 10px; 	
+}
