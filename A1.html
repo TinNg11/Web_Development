@@ -1,0 +1,161 @@
+<html>
+<head>
+    <!-- Setting the page title and linking to the CSS file -->
+    <title>CIS 2336 ASSIGNMENT-01</title>
+    <link rel="stylesheet" href="A1.css">
+</head>
+<body id="main-body">
+    <!-- Page heading -->
+    <!-- I don't know if I did it right, but I made it so that 233 and -01 are slightly lower than the rest of the title. -->
+    <h1 style="text-align: center;">CIS <sub style="vertical-align: sub;">233</sub>6 ASSIGNMENT<sub style="vertical-align: sub;">-01</sub> </h1>
+    <!-- Start of the form -->
+    <form>
+        <!-- Fieldset to group related form elements -->
+        <fieldset id="content">
+            <!-- Table for organizing content -->
+            <table id="t01" style="width: 100%;">
+                <!-- Row 1 -->
+                <tr>
+                    <!-- Column 1: Left side content -->
+                    <td style="width: 50%;">
+                        <!-- Label and input for My Favorite Place -->
+                        <div style="font-size: 15px; width: 50%;">My Favorite Place:</div>
+                        <input type="text" id="fp">
+                        <br>
+                        <!-- Label and textarea for Place Description -->
+                        <div style="font-size: 15px; width: 50%;">Place Description:</div>
+                        <textarea id="pd"></textarea>
+                    </td>
+                    <!-- Column 2: Right side content with rowspan -->
+                    <td style="width: 50%;" rowspan="2">
+                        <!-- Image for the top right side of the table -->
+                        <img src="Images/i1.jpg" id="skyline">
+                    </td>
+                </tr>
+                <!-- Row 2 -->
+                <tr>
+                    <!-- Column 1: Middle left side content -->
+                    <td>
+                        <!-- Links for Visit the University of Houston and Email to your Professor -->
+                        <div> <br>
+                            <div> Visit the University of Houston: <br>
+                            <a href="https://www.uh.edu/" target="_blank"> University of Houston </a>
+                            </div>
+                            <br>
+                        </div>
+                        <div> Email to your Professor: <br>
+                            <a href="mailto:sfaiyaz@central.uh.edu"> Email Professor </a>
+                        </div>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                <!-- Row 3 -->
+                <tr>
+                    <!-- Column 1: Middle left side content -->
+                    <td>
+                        <!-- Dropdowns for continent, country, and city -->
+                        <div> Continent:
+                            <br>
+                            <select id="continent">
+                                <option value="" disabled selected>Choose continent</option>
+                                <option value="africa">Africa</option>
+                                <option value="antarctica">Antarctica</option>
+                                <option value="asia">Asia</option>
+                        	<option value="australia">Australia</option>
+                        	<option value="europe">Europe</option>
+                        	<option value="north-america">North America</option>
+                        	<option value="south-america">South America</option>
+                            </select>
+                        </div> <br>
+                        <div> Country:
+                            <br>
+                            <select id="country">
+                                <option value="" disabled selected>Choose country</option>
+                                <option value="usa">United States</option>
+                                <option value="canada">Canada</option>
+                                <option value="vietnam">Vietnam</option>
+                        	<option value="australia">Australia</option>
+                        	<option value="japan">Japan</option>
+                            </select>
+                        </div> <br>
+                        <div> City:
+                            <br>
+                            <select id="city" required> <!-- Required makes it so that the user has to enter a city -->
+                                <option value="" disabled selected>Choose city</option>
+                                <option value="new-york">New York</option>
+                                <option value="toronto">Toronto</option>
+                                <option value="hanoi">Ha Noi</option>
+                        	<option value="sydney">Sydney</option>
+                        	<option value="tokyo">Tokyo</option>
+                            </select>
+                        </div> <br>
+                        <!-- List of Fall 2023 courses -->
+                        <div> Fall 2023 Course Lists
+                            <ul>
+                                <li>CIS 2336</li>
+                                <li>CIS 2334</li>
+                                <li>CIS 3343</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <!-- Column 2: Middle right side content -->
+                    <td>
+                        <!-- Grouped options for accommodation -->
+                        <div id="f02">
+                            <div id="accommodation"> Do you need accommodation? <br>
+                                <input type="radio" name="accommodation" value="Hotel"> Hotel
+                                <br>
+                                <input type="radio" name="accommodation" value="Lodge"> Lodge
+                            </div>
+                            <!-- Checkbox options for services -->
+                            <div id="services"> Services <br>
+                                <input type="checkbox" value="Car Rental"> Car Rental <br>
+                                <input type="checkbox" value="Bus Tour"> Bus Tour <br>
+                                <input type="checkbox" value="Camp Ground"> Camp Ground <br>
+                   		<input type="checkbox" value="Downtown Tour"> Downtown Tour <br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Row 4 -->
+                <tr>
+                    <!-- Column 1: Bottom left side content -->
+                    <td>
+                        <!-- Checkbox for accepting terms -->
+                        <div id="accept-terms"> I accept the terms and conditions
+                            <input type="checkbox">
+                        </div>
+                        <!-- Input field for rating -->
+                        <div id="rating"> <br> Rate this Place: <br>
+                            <input type="number" id="userRating" name="rating">
+                        </div>
+                        <!-- Color picker for color collection -->
+                        <div id="color-collection"> <br> Color Collection: <br>
+                            <input type="color" id="color-collection" name="color-collection">
+                        </div>
+                    </td>
+                    <!-- Column 2: Bottom right side content -->
+                    <td>
+                        <!-- Date and time inputs for check-in -->
+                        <div id="checkIn"> Check-in Date <br>
+                            <input type="date" id="pdata"> <br> <br>
+                            Check-in Time <br>
+                            <input type="time" id="ptime">
+                        </div>
+                    </td>
+                </tr>
+		<tr>
+		    <td colspan="2">
+		    <!-- Submit and Reset Buttons -->
+                        <div id="submit-reset">
+                            <input type="submit" value="Submit" style="background-color:powderblue; font-size: 15px; padding: 10px;">
+                            <input type="reset" value="Reset" style="background-color:powderblue; font-size: 15px; padding: 10px;"">
+                        </div>
+		    </td>
+		</tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
